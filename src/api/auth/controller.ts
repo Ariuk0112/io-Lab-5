@@ -6,6 +6,7 @@ import { LoginRequestBody } from "authTypes";
 import AuthenticationService from "src/services/authService";
 import { JwtPayload } from "jsonwebtoken";
 const authService = new AuthenticationService();
+
 export const login = async (
   req: Request<any, any, LoginRequestBody>,
   res: Response
